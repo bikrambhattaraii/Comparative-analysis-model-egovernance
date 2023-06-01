@@ -1,0 +1,62 @@
+:root{
+--primary-color:#d82c2c;
+--secondary-color: #086cac;
+
+}
+
+.main-container-login{
+    display: flex;
+}
+.form-container-left{
+    
+   
+    height: 400px;
+    width: 50%;
+}
+.main-container-login h1{
+    text-align: center;
+    font-size:3rem ;
+    color: var(--secondary-color);
+    
+}
+.login-container-right{
+    height: 700px ;
+    width: 50%;
+}
+.login-container-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.form-container-left input[type="text"],
+.form-container-left input[type="password"]
+{
+padding: 10px;
+width: 200px;
+margin-top: 40px;
+
+}
+.form-container-left input[type="submit"]{
+    background-color: #086cac;
+    color: wheat;
+    padding: 6px;
+    border: none;
+    margin-top: 40px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.form-container-left input[type="submit"]:hover{
+    background-color: #d82c2c;
+}
+form a{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    
+}
+form a:hover{
+    color: #086cac;
+
+}

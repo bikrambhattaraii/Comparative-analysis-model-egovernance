@@ -10,13 +10,15 @@
 .form-container-left{
     
    
-    height: 400px;
+    height: 700px;
     width: 50%;
+    background-color:var(--secondary-color);
 }
 .main-container-login h1{
     text-align: center;
     font-size:3rem ;
-    color: var(--secondary-color);
+    
+    font-family: 'Abril Fatface', cursive;
     
 }
 .login-container-right{
@@ -32,13 +34,13 @@
 .form-container-left input[type="password"]
 {
 padding: 10px;
-width: 200px;
+width: 250px;
 margin-top: 40px;
 
 }
 .form-container-left input[type="submit"]{
-    background-color: #086cac;
-    color: wheat;
+    background-color:var(--primary-color);
+    color: #fff;
     padding: 6px;
     border: none;
     margin-top: 40px;
@@ -48,7 +50,7 @@ margin-top: 40px;
     margin-bottom: 20px;
 }
 .form-container-left input[type="submit"]:hover{
-    background-color: #d82c2c;
+    background-color: var(--secondary-color);
 }
 form a{
     color: var(--primary-color);

@@ -1,0 +1,49 @@
+:root{
+    --primary-color:#d82c2c;
+    --secondary-color: #086cac;
+    
+    }
+.registration-container-main{
+    display: flex;
+
+}
+.registration-container-left{
+    width: 50%;
+    height: 700px;
+    background-color: var(--secondary-color);
+}
+.registration-container-right{
+    width: 50%;
+    height: 700px;
+}
+.registration-container-right img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.registration-container-left input[type="text"],
+.registration-container-left input[type="password"],
+.registration-container-left input[type="email"]
+{
+padding: 10px;
+width: 250px;
+margin-top: 40px;
+border-radius: 3px;
+
+}
+.registration-container-left input[type="submit"]{
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px
+}
+.registration-container-left input[type="submit"]:hover{
+background-color:var(--secondary-color);
+transition: 1s ease-in-out;
+transform: scale(1.2);
+}
+.registration-container-left h1{
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+}

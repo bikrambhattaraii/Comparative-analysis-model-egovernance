@@ -7,10 +7,10 @@ import Header from './components/header/header';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <Homesection />
-     {/* <SignUpForm /> 
-      <Registration />  */}
+       <SignUpForm />
+      <Registration /> 
     </div>
   );
 }

@@ -1,0 +1,8 @@
+.main-header-text{
+    font-size: 2rem;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    margin-top: 100px;
+}

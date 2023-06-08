@@ -7,7 +7,7 @@ const Homesection = () => {
   return (
     <div>
       <Header />
-      <h1>Comparative analysis model</h1>
+      <h1 className='main-header-text'>Comparative analysis model</h1>
       <Compare />
     </div>
   )

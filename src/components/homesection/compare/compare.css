@@ -1,4 +1,8 @@
-
+:root{
+    --primary-color:#d82c2c;
+    --secondary-color: #086cac;
+    
+    }
 
 *{
     margin: 0;
@@ -6,21 +10,67 @@
     box-sizing: border-box;
 
 }
+
 .container-compare{
     /* display: flex; */
     margin-top: 100px;
 }
 .container-compare h1{
-    margin-top: 100px;
-    color:--var(primary-color);
+    /* margin-top: 100px; */
+    font-size: 2rem;
+    color:var(--primary-color);
+    display: flex;
+    justify-content: center;
+    text-align: start;
 }
 
 .form-options{
     margin-top: 100px;
+    width: 100%;
+    
+}
+.form-options-other{
+    margin-top: 100px;
+    width: 50%;
+    margin-right: 200px;
 }
 button{
     padding: 20px 40px 20px 40px;
     font-size: 2rem;
-    color: #fff;
-    background-color: grey;
+    /* color: var(--secondary-color); */
+    color: white;
+    background-color: var(--primary-color);
+    margin-top: 100px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    transform: 1s scale(1.1);
+    transition: .4s ease-in-out;
+}
+.container-other-countries{
+    /* margin-top: 100px; */
+    display: flex;
+    width: 100%;
+}
+label{
+    font-size: 2rem;
+    margin-top: 100px;
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+select{
+    font-size: 2rem;
+    /* margin-top: 100px; */
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border:var(--primary-color) 1px solid;
+}
+select:focus{
+    outline: none;
+    color: var(--primary-color);
 }

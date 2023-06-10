@@ -1,5 +1,7 @@
 import React from "react";
 import "./compare.css";
+import {Link} from "react-router-dom"
+
 
 const Compare = () => {
   const handleSubmit = () => {
@@ -27,7 +29,9 @@ const Compare = () => {
           </div>
         </div>
 
-        <button onClick={handleSubmit}>compare</button>
+        <button onClick={handleSubmit}>
+          
+          compare</button>
       </div>
     </>
   );

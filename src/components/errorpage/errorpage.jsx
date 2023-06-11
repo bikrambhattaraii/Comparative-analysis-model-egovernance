@@ -26,4 +26,7 @@ const Errorpage = () => {
 };
 
 export default Errorpage;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9a76364edd2b584fc95ca9597ba094f065e46561

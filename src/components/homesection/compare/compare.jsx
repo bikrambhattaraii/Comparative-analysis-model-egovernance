@@ -3,7 +3,7 @@ import "./compare.css";
 
 const Compare = () => {
   const handleSubmit = () => {
-    console.log("h");
+    console.log("clicked");
   };
   return (
     <>

@@ -40,6 +40,22 @@ const Form = () => {
            <input type="checkbox"/> 
           </label>
         </div>
+        <div>
+          <label>mobile services:
+           <input type="checkbox"/> 
+          </label>
+
+        </div>
+        <div>
+          <label>Blockchain Adoption:
+           <input type="checkbox"/> 
+          </label>
+        </div>
+        <div>
+          <label>Eelectronic voting:
+           <input type="checkbox"/> 
+          </label>
+        </div>
       
       </form>
       

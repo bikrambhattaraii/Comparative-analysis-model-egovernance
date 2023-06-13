@@ -7,16 +7,14 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Homesection />,
-    children: [
-      {
-        path: "form",
-        element: <Form />,
-      },
-      {
-        path: "errorpage",
-        element: <Errorpage />,
-      },
-    ],
+  },
+  {
+    path: "form",
+    element: <Form />,
+  },
+  {
+    path: "*",
+    element: <Errorpage />,
   },
 ]);
 export default router;

@@ -13,7 +13,7 @@ const Errorpage = () => {
               <div class="contant_box_404">
                 <h3 class="h2">Look like you're lost</h3>
                 <p>the page you are looking for not avaible!</p>
-                <a href="/src/components/homesection/homesection.jsx" class="link_404">
+                <a class="link_404">
                   Go to Home
                 </a>
               </div>
@@ -24,9 +24,4 @@ const Errorpage = () => {
     </section>
   );
 };
-
 export default Errorpage;
-<<<<<<< HEAD
-
-=======
->>>>>>> 9a76364edd2b584fc95ca9597ba094f065e46561

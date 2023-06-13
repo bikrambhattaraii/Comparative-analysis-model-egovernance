@@ -29,7 +29,7 @@ const Compare = () => {
           </div>
         </div>
 
-        <button onClick={handleSubmit}>
+        <button className="btn" onClick={handleSubmit}>
           
           compare</button>
       </div>

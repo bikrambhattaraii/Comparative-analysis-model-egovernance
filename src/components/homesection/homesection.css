@@ -1,8 +1,31 @@
-.main-header-text{
+.main-container-homesection h1{
     font-size: 2rem;
     color: var(--primary-color);
     display: flex;
     justify-content: center;
     text-align: start;
     margin-top: 100px;
+}
+.btn2{
+    padding: 20px 40px 20px 40px;
+    font-size: 2rem;
+    /* color: var(--secondary-color); */
+    color: white;
+    background-color: var(--primary-color);
+    margin-top: 100px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+    margin-left: 600px;
+    margin-top: 100px;
+}
+.btn2:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    transform: 1s scale(1.1);
+    transition: .4s ease-in-out;
 }

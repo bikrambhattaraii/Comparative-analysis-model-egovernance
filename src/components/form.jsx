@@ -42,7 +42,7 @@ const Form = () => {
   };
   return (
     <div className="form-container">
-      <h1>upload new country </h1>
+      <h1>Upload Country Details</h1>
       <form action="" method="POST" onSubmit={handleSubmit}>
         <div>
           <label>
@@ -148,7 +148,9 @@ const Form = () => {
             />
           </label>
         </div>
+        <div>
         <input type="submit"  />
+        </div>
       </form>
     </div>
   );

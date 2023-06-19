@@ -1,0 +1,64 @@
+
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #d1e3f1;
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  label {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .form-field{
+    font-size: 30px;
+  }
+
+  .form-data{
+    padding-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="date"]
+ {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="checkbox"]{
+    margin-bottom: 40px;
+    margin-left: 5px;
+    transform: scale(1.5);
+  }
+  
+  input[type="submit"] {
+    width: 50%;
+    padding: 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #4e524a;
+    width: 50%;
+
+  }
+
+  

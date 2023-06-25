@@ -40,7 +40,7 @@ const Form = () => {
   return (
     <div className="form-container">
       <h1>upload new country </h1>
-      <form  onSubmit={handleSubmit}>
+      <form action="" method="POST" onSubmit={handleSubmit}>
         <div>
           <label>
             Country Name:
@@ -154,7 +154,9 @@ const Form = () => {
             />
           </label>
         </div>
+        <div>
         <input type="submit"  />
+        </div>
       </form>
     </div>
   );

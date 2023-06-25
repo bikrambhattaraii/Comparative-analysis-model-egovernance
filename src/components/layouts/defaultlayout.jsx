@@ -1,10 +1,12 @@
 import React from 'react'
-import Homesection from '../homesection/homesection'
-const Defaultlayout = () => {
+import { Outlet } from 'react-router-dom'
+const Defaultlayout = ({children}) => {
   return (
     <>
-     <Homesection /> 
-     
+    <div>
+      <h1>This is default layout</h1>
+      <Outlet />
+    </div>
     </>
   )
 }

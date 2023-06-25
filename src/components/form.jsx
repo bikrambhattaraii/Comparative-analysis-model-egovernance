@@ -1,53 +1,51 @@
 import "./form.css";
-import { useState } from "react";
+import { useState, react } from "react";
 const Form = () => {
-  
-
-
-
-
   const [formData, setFormData] = useState({
     country_name: "",
     start_date: "",
     history: "",
-    epassport: "",
-    birthdeathcert: "",
-    water_payment: "",
-    electricity_payment: "",
-    mobile_services: "",
-    blockchain_adoption: "",
-    electronic_voting: "",
+    epassport: false,
+    birthdeathcert: false,
+    water_payment: false,
+    electricity_payment: false,
+    mobile_services:false,
+    blockchain_adoption: false,
+    electronic_voting: false,
   });
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission here
+  const handleCheckboxChange = (e) => {
+    setFormData({...formData,[e.target.name]: e.target.checked})
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
     console.log(formData);
     // Reset form data
     setFormData({
       country_name: "",
       start_date: "",
       history: "",
-      epassport: "",
-      birthdeathcert: "",
-      water_payment: "",
-      electricity_payment: "",
-      mobile_services: "",
-      blockchain_adoption: "",
-      electronic_voting: "",
+      epassport: false,
+      birthdeathcert: false,
+      water_payment: false,
+      electricity_payment: false,
+      mobile_services: false,
+      blockchain_adoption: false,
+      electronic_voting: false,
     });
   };
   return (
     <div className="form-container">
       <h1>upload new country </h1>
-      <form action="" method="POST" onSubmit={handleSubmit}>
+      <form  onSubmit={handleSubmit}>
         <div>
           <label>
             Country Name:
             <input
+            value= {formData.country_name}
               type="text"
               name="country_name"
               placeholder="enter the country name"
@@ -60,7 +58,8 @@ const Form = () => {
             E-governannce Start date:
             <input
               type="date"
-              name="start-date"
+              name="start_date"
+              value={formData.start_date}
               onChange={handleInputChange}
             />
           </label>
@@ -70,7 +69,8 @@ const Form = () => {
             History:
             <input
               type="text"
-              name="history"
+             name="history"
+             value={formData.history}
               placeholder="enter the history of e governance of the specific country"
               onChange={handleInputChange}
             />
@@ -83,7 +83,8 @@ const Form = () => {
             
               type="checkbox"
               name="epassport"
-              onChange={handleInputChange}
+              checked={formData.epassport}
+              onChange={handleCheckboxChange}
             />
           </label>
         </div>
@@ -93,7 +94,8 @@ const Form = () => {
             <input
               type="checkbox"
               name="birthdeathcert"
-              onChange={handleInputChange}
+              checked={formData.birthdeathcert}
+              onChange={handleCheckboxChange}
             />
           </label>
         </div>
@@ -103,7 +105,8 @@ const Form = () => {
             <input
               type="checkbox"
               name="water_payment"
-              onChange={handleInputChange}
+              checked={formData.water_payment}
+              onChange={handleCheckboxChange}
             />
           </label>
         </div>
@@ -113,7 +116,8 @@ const Form = () => {
             <input
               type="checkbox"
               name="electricity_payment"
-              onChange={handleInputChange}
+              onChange={handleCheckboxChange}
+              checked={formData.electricity_payment}
             />
           </label>
         </div>
@@ -122,9 +126,9 @@ const Form = () => {
             mobile services:
             <input
               type="checkbox"
-              name="mobile_services"
-              
-              onChange={handleInputChange}
+             name="mobile_services"
+              checked={formData.mobile_services}
+              onChange={handleCheckboxChange}
             />
           </label>
         </div>
@@ -133,8 +137,9 @@ const Form = () => {
             Blockchain Adoption:
             <input
               type="checkbox"
-              name="blockchain_adoption"
-              onChange={handleInputChange}
+              checked={formData.blockchain_adoption}
+             name="blockchain_adoption"
+              onChange={handleCheckboxChange}
             />
           </label>
         </div>
@@ -144,7 +149,8 @@ const Form = () => {
             <input
               type="checkbox"
               name="electronic_voting"
-              onChange={handleInputChange}
+              onChange={handleCheckboxChange}
+              checked={formData.electronic_voting}
             />
           </label>
         </div>

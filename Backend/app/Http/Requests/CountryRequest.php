@@ -25,13 +25,13 @@ class CountryRequest extends FormRequest
     'country_name'=>'required|string',
     'start_date'=>'required|string',
     'history'=>'required|string',
-    'epassport'=>'required|string',
-    'birthdeathcert'=>'required|string',
-    'water_payment'=>'required|string',
-    'electricity_payment'=>'required|string',
-    'mobile_services'=>'required|string',
-    'Blockchain_adoption'=>'required|string',
-    'electronic_voting'=>'required|string',
+    'epassport'=>'required|boolean',
+    'birthdeathcert'=>'required|boolean',
+    'water_payment'=>'required|boolean',
+    'electricity_payment'=>'required|boolean',
+    'mobile_services'=>'required|boolean',
+    'Blockchain_adoption'=>'required|boolean',
+    'electronic_voting'=>'required|boolean',
         ];
     }
 }

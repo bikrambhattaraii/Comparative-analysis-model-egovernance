@@ -19,6 +19,5 @@ class Country extends Model
         'mobile_services',
         'Blockchain_adoption',
         'electronic_voting',
-
     ];
 }

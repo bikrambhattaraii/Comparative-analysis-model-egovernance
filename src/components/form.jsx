@@ -1,5 +1,8 @@
 import "./form.css";
 import { useState, react } from "react";
+import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Form = () => {
   const [formData, setFormData] = useState({
     country_name: "",
@@ -10,7 +13,7 @@ const Form = () => {
     water_payment: false,
     electricity_payment: false,
     mobile_services:false,
-    blockchain_adoption: false,
+    Blockchain_adoption: false,
     electronic_voting: false,
   });
   const handleInputChange = (e) => {
@@ -22,6 +25,14 @@ const Form = () => {
   }
   const handleSubmit = (e) => {
     e.preventDefault();
+    axios.post('http://localhost:8000/api/country', formData)
+    .then((res)=> {
+      console.log(res.data.data)
+      toast.success('Data created successfully',{
+        position: toast.POSITION.TOP_RIGHT,
+    });
+  })
+    .catch(err => console.log(err.response.data.message))
     console.log(formData);
     // Reset form data
     setFormData({
@@ -33,12 +44,14 @@ const Form = () => {
       water_payment: false,
       electricity_payment: false,
       mobile_services: false,
-      blockchain_adoption: false,
+      Blockchain_adoption: false,
       electronic_voting: false,
     });
   };
+
   return (
     <div className="form-container">
+      <ToastContainer />
       <h1>upload new country </h1>
       <form action="" method="POST" onSubmit={handleSubmit}>
         <div>
@@ -138,7 +151,7 @@ const Form = () => {
             <input
               type="checkbox"
               checked={formData.blockchain_adoption}
-             name="blockchain_adoption"
+             name="Blockchain_adoption"
               onChange={handleCheckboxChange}
             />
           </label>

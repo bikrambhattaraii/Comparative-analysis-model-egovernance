@@ -4,6 +4,7 @@ import Defaultlayout from './components/layouts/defaultlayout';
 import Homesection from './components/homesection/homesection';
 import Errorpage from './components/errorpage/errorpage';
 import {createBrowserRouter} from "react-router-dom";
+import Compare from './components/homesection/compare/compare';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -11,10 +12,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Homesection />
+        element: <Compare />
       },
       {
-        path: "/home",
+        path: "/admin_create",
         element: <Homesection />
       },
       {

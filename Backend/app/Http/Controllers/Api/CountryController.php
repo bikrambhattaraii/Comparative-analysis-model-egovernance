@@ -15,6 +15,31 @@ class CountryController extends Controller
     public function index()
     {
         $all_country_data = Country::all();
+        foreach($all_country_data as $country){
+            $count = 0;
+            if($country->epassport == 1){
+                $count++;
+            }
+            if($country->birthdeathcert == 1){
+                $count++;
+            }
+            if($country->water_payment == 1){
+                $count++;
+            }
+            if($country->electricity_payment == 1){
+                $count++;
+            }
+            if($country->mobile_services == 1){
+                $count++;
+            }
+            if($country->Blockchain_adoption == 1){
+                $count++;
+            }
+            if($country->electronic_voting == 1){
+                $count++;
+            }
+            $country->featureCount = $count;
+        }
         return response()->json([
             'success' => true,
             'message' => 'All Country Data',

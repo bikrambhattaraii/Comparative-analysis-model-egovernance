@@ -16,13 +16,13 @@ return new class extends Migration
             $table->string('country_name');
             $table->string('start_date');
             $table->string('history');
-            $table->enum('epassport',['true','false']);
-            $table->enum('birthdeathcert',['true','false']);
-            $table->enum('water_payment',['true','false']);
-            $table->enum('electricity_payment',['true','false']);
-            $table->enum('mobile_services',['true','false']);
-            $table->enum('Blockchain_adoption',['true','false']);
-            $table->enum('electronic_voting',['true','false']);
+            $table->string('epassport')->default(false);
+            $table->string('birthdeathcert')->default(false);
+            $table->string('water_payment')->default(false);
+            $table->string('electricity_payment')->default(false);
+            $table->string('mobile_services')->default(false);
+            $table->string('Blockchain_adoption')->default(false);
+            $table->string('electronic_voting')->default(false);
             $table->timestamps();
         });
     }

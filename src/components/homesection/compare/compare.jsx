@@ -137,22 +137,22 @@ const Compare = () => {
     <tr>
       <td>E-Passport</td>
       <td class="boolean">{countryOne.epassport== 1 ? "Yes" : "NO" }</td>
-      <td class="boolean">{countryOne.epassport == 1 ? "Yes" : "NO" }</td>
+      <td class="boolean">{countryTwo.epassport == 1 ? "Yes" : "NO" }</td>
     </tr>
     <tr>
       <td>Birth Death Cert</td>
       <td class="boolean">{countryOne.birthdeathcert == 1 ? "Yes" : "NO" }</td>
-      <td class="boolean">{countryOne.birthdeathcert == 1 ? "Yes" : "NO" }</td>
+      <td class="boolean">{countryTwo.birthdeathcert == 1 ? "Yes" : "NO" }</td>
     </tr>
     <tr>
       <td>Water Payment</td>
       <td class="boolean">{countryOne.water_payment == 1 ? "Yes" : "NO" }</td>
-      <td class="boolean">{countryOne.water_payment == 1 ? "Yes" : "NO" }</td>
+      <td class="boolean">{countryTwo.water_payment == 1 ? "Yes" : "NO" }</td>
     </tr>
     <tr>
       <td>Electricity Payment</td>
       <td class="boolean">{ countryOne.electricity_payment == 1 ? "Yes" : "NO" }</td>
-      <td class="boolean">{countryOne.electricity_payment == 1 ? "Yes" : "NO" }</td>
+      <td class="boolean">{countryTwo.electricity_payment == 1 ? "Yes" : "NO" }</td>
     </tr>
     <tr>
       <td>Mobile Services</td>
@@ -162,12 +162,12 @@ const Compare = () => {
     <tr>
       <td>Blockchain Adoption</td>
       <td class="boolean">{ countryOne.Blockchain_adoption == 1 ? "Yes" : "NO" }</td>
-      <td class="boolean">{ countryOne.Blockchain_adoption == 1 ? "Yes" : "NO"}</td>
+      <td class="boolean">{ countryTwo.Blockchain_adoption == 1 ? "Yes" : "NO"}</td>
     </tr>
     <tr>
       <td>Electronic Voting</td>
       <td class="boolean">{countryOne.electronic_voting == 1 ? "Yes" : "No" }</td>
-      <td class="boolean">{countryOne.electronic_voting == 1 ? "Yes" : "No" }</td>
+      <td class="boolean">{countryTwo.electronic_voting == 1 ? "Yes" : "No" }</td>
     </tr>
   </tbody>
 </table>

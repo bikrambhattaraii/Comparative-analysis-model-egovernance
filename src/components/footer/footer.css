@@ -1,0 +1,22 @@
+.footer{
+  background-color: cornflowerblue;
+  padding: 10px;
+  /* width: 100%; */
+}
+.footer-text{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Abril Fatface', cursive;
+}
+.useful-links{
+  display: flex;
+justify-content: center;
+}
+.profile-links{
+  margin-left: 100px;
+}
+.profile-links p{
+  font-size: 1.5rem;
+  font-weight: 400;
+}

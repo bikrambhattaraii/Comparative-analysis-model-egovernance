@@ -1,11 +1,16 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import Header from '../header/header'
+import Footer from '../footer/footer';
 const Defaultlayout = ({children}) => {
   return (
     <>
     <div>
-      <h1>This is default layout</h1>
+      <Header />
       <Outlet />
+      
+      <Footer />  
+      {/* css width confict is created by footer css */}
     </div>
     </>
   )

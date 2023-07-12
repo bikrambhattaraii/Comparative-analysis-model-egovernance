@@ -177,7 +177,7 @@ const Compare = () => {
       compareResult && (
         countryOne.featureCount > countryTwo.featureCount ? (
           <>
-          <h1>Country One has better E governance</h1>
+          <h1 className='header-country-result'>Country One has better E governance</h1>
           </>
         ) : (
          <>

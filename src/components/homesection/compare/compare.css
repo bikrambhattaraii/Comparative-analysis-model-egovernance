@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 100px;
+    
   }
   
   .dropdown-wrapper {
@@ -24,6 +26,9 @@
     color: #fff;
     border-radius: 4px;
     cursor: pointer;
+  }
+  button:hover{
+    background-color: rgb(21, 19, 19);
   }
   .header-country-result{
     font-size: 2rem;
@@ -93,3 +98,10 @@
     color: rgb(1, 6, 9);
     margin: 50px;
   }
+.header-country-result{
+  color: #007bff;
+}
+.dropdowns-container h2{
+  color: darkslategray;
+  /* margin-top: 100px; */
+}

@@ -12,7 +12,7 @@ const Homesection = () => {
   };
   return (
     <div className='main-container-homesection'>
-      <Header />
+    
       <h1>Compare two different countries e governanace </h1>
       <button className='btn2' onClick={handleClick}>proceed to form</button>
     </div>

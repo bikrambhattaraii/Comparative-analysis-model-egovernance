@@ -110,9 +110,9 @@ const Compare = () => {
         </div>
       ) : (
         <>
-        <table class="comparison-table">
-  <thead>
-    <tr>
+  <table class="comparison-table">
+    <thead>
+    <tr >
       <th>Field</th>
       <th>Country 1</th>
       <th>Country 2</th>
@@ -181,7 +181,7 @@ const Compare = () => {
           </>
         ) : (
          <>
-          <h1>Country Two has better E governance</h1>
+          <h1 className='header-country-result'>Country Two has better E governance</h1>
          </>
         )  
       )

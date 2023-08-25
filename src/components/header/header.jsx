@@ -8,14 +8,15 @@ const Header = () => {
         
         <img src={Image} alt="" />
   
-        <h4>Government of Nepal
-          </h4> 
-        
-          <h2>Kathmandu</h2>  
+        <h4>Government of Nepal</h4>
+          <h2>Kathmandu</h2> 
+
+          
      
      
       
     </nav>
+  
       
     </>
   )

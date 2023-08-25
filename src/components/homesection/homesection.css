@@ -23,9 +23,5 @@
     margin-top: 100px;
 }
 .btn2:hover{
-    background-color: var(--secondary-color);
-    color: white;
-    cursor: pointer;
-    transform: 1s scale(1.1);
-    transition: .4s ease-in-out;
+    background-color: aquamarine;
 }

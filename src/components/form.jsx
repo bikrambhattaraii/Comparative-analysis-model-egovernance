@@ -52,7 +52,7 @@ const Form = () => {
   return (
     <div className="form-container">
       <ToastContainer />
-      <h1>upload new country </h1>
+      <h1>Please Enter the country E-governance status </h1>
       <form action="" method="POST" onSubmit={handleSubmit}>
         <div>
           <label>
@@ -77,17 +77,17 @@ const Form = () => {
             />
           </label>
         </div>
-        <div>
+        <div className="history">
           <label>
-            History:
-            <input
-              type="text"
+            History:</label>
+            <textarea
+              
              name="history"
              value={formData.history}
               placeholder="enter the history of e governance of the specific country"
               onChange={handleInputChange}
             />
-          </label>
+          
         </div>
         <div>
           <label>

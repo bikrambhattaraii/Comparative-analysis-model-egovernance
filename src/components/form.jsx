@@ -1,8 +1,9 @@
 import "./form.css";
-import { useState, react } from "react";
+import { useState } from "react";
 import axios from "axios";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Form = () => {
   const [formData, setFormData] = useState({
     country_name: "",
@@ -12,7 +13,7 @@ const Form = () => {
     birthdeathcert: false,
     water_payment: false,
     electricity_payment: false,
-    mobile_services:false,
+    mobile_services: false,
     Blockchain_adoption: false,
     electronic_voting: false,
   });
@@ -21,18 +22,22 @@ const Form = () => {
     setFormData({ ...formData, [name]: value });
   };
   const handleCheckboxChange = (e) => {
-    setFormData({...formData,[e.target.name]: e.target.checked})
-  }
+    setFormData({ ...formData, [e.target.name]: e.target.checked });
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8000/api/country', formData)
-    .then((res)=> {
-      console.log(res.data.data)
-      toast.success('Data created successfully',{
-        position: toast.POSITION.TOP_RIGHT,
-    });
-  })
-    .catch(err => console.log(err.response.data.message))
+    axios
+      .post("http://localhost:8000/api/country", formData)
+      .then((res) => {
+        console.log(res.data.data);
+        toast.success("Data created successfully", {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+      })
+      .catch((err) => {
+        console.log(err.response.data.message);
+        toast.error("Failed to create data");
+      });
     console.log(formData);
     // Reset form data
     setFormData({
@@ -58,7 +63,7 @@ const Form = () => {
           <label>
             Country Name:
             <input
-            value= {formData.country_name}
+              value={formData.country_name}
               type="text"
               name="country_name"
               placeholder="enter the country name"
@@ -78,22 +83,18 @@ const Form = () => {
           </label>
         </div>
         <div className="history">
-          <label>
-            History:</label>
-            <textarea
-              
-             name="history"
-             value={formData.history}
-              placeholder="enter the history of e governance of the specific country"
-              onChange={handleInputChange}
-            />
-          
+          <label>History:</label>
+          <textarea
+            name="history"
+            value={formData.history}
+            placeholder="enter the history of e governance of the specific country"
+            onChange={handleInputChange}
+          />
         </div>
         <div>
           <label>
             E passport:
             <input
-            
               type="checkbox"
               name="epassport"
               checked={formData.epassport}
@@ -139,7 +140,7 @@ const Form = () => {
             mobile services:
             <input
               type="checkbox"
-             name="mobile_services"
+              name="mobile_services"
               checked={formData.mobile_services}
               onChange={handleCheckboxChange}
             />
@@ -150,8 +151,8 @@ const Form = () => {
             Blockchain Adoption:
             <input
               type="checkbox"
-              checked={formData.blockchain_adoption}
-             name="Blockchain_adoption"
+              checked={formData.Blockchain_adoption}
+              name="Blockchain_adoption"
               onChange={handleCheckboxChange}
             />
           </label>
@@ -168,7 +169,7 @@ const Form = () => {
           </label>
         </div>
         <div>
-        <input type="submit"  />
+          <input type="submit" />
         </div>
       </form>
     </div>

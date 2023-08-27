@@ -1,13 +1,13 @@
 .footer{
    background-color:#e7e7ec ; 
   padding: 10px;
-  /* width: 100%; */
+  width: 100%;
 }
 .footer-text{
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
-  font-family: 'Abril Fatface', cursive;
+  /* font-family: 'Abril Fatface', cursive; */
 }
 .useful-links{
   display: flex;
@@ -19,4 +19,5 @@ justify-content: center;
 .profile-links p{
   font-size: 1.5rem;
   font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

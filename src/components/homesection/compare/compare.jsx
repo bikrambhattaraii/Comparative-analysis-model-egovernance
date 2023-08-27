@@ -130,7 +130,7 @@ const Compare = () => {
       <td>{countryTwo.start_date }</td>
     </tr>
     <tr>
-      <td>History</td>
+      <td >History</td>
       <td>{countryOne.history }</td>
       <td>{countryTwo.history }</td>
     </tr>

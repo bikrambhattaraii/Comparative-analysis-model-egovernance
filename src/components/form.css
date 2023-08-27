@@ -68,7 +68,7 @@ font-family: 'PT Serif', serif;
   
   input[type="checkbox"]{
     margin-bottom: 40px;
-    margin-left: 103px;
+     align-items: flex-end;
     transform: scale(1.5);
   }
   

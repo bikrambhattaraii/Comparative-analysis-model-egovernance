@@ -11,30 +11,30 @@ const Footer = () => {
       <div className='useful-links footer'>
         <div className='profile-links'>
           <p>Bikram Bhattarai</p>
-            <a href=""><FaGithub size={30}/></a>
-            <a href=""><FaFacebookF size={30}/> </a>
-            <a href=""><FaLinkedin size={30}/></a>
+            <a href=""><FaGithub size={30} color='black'/></a>
+            <a href=""><FaFacebookF size={30} color='black' /> </a>
+            <a href=""><FaLinkedin size={30} color='black'/></a>
 
         </div>
         <div className='profile-links'>
           <p>Aadarsha Bhattarai</p>
-            <a href=""><FaGithub size={30}/></a>
-            <a href=""><FaFacebookF size={30}/> </a>
-            <a href=""><FaLinkedin size={30}/></a>
+            <a href=""><FaGithub size={30}  color='black' /></a>
+            <a href=""><FaFacebookF size={30} color='black'/> </a>
+            <a href=""><FaLinkedin size={30} color='black'/></a>
 
         </div>
         <div className='profile-links'>
           <p>Rikesh shrestha</p>
-            <a href=""><FaGithub size={30}/></a>
-            <a href=""><FaFacebookF size={30}/> </a>
-            <a href=""><FaLinkedin size={30}/></a>
+            <a href=""><FaGithub size={30} color='black'/></a>
+            <a href=""><FaFacebookF size={30} color='black'/> </a>
+            <a href=""><FaLinkedin size={30} color='black'/></a>
 
         </div>
         <div className='profile-links'>
           <p>Razz Tuladhar</p>
-            <a href=""><FaGithub size={30}/></a>
-            <a href=""><FaFacebookF size={30}/> </a>
-            <a href=""><FaLinkedin size={30}/></a>
+            <a href=""><FaGithub size={30} color='black'/></a>
+            <a href=""><FaFacebookF size={30} color='black'/> </a>
+            <a href=""><FaLinkedin size={30} color='black'/></a>
 
         </div>
         </div>  

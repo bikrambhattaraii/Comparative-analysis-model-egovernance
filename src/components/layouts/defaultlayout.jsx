@@ -2,7 +2,7 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from '../header/header'
 import Footer from '../footer/footer';
-import Homesection from '../homesection/homesection';
+
 const Defaultlayout = ({children}) => {
   return (
     <>
@@ -12,8 +12,7 @@ const Defaultlayout = ({children}) => {
       <Outlet />
       
       <Footer />  
-      {/* css width confict is created by footer css */}
-    </div>
+        </div>
     </>
   )
 }

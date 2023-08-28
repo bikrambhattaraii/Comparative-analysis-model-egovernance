@@ -7,34 +7,39 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p className="footer-text">Designed and Developed by</p>
+        <p className="footer-text">Meet Our Team</p>
+        <div className='bottom-border'></div>
       <div className='useful-links footer'>
         <div className='profile-links'>
           <p>Bikram Bhattarai</p>
-            <a href=""><FaGithub size={30} color='black'/></a>
-            <a href=""><FaFacebookF size={30} color='black' /> </a>
-            <a href=""><FaLinkedin size={30} color='black'/></a>
+          <div className='name-bottom-border'></div>
+            <a href=""><FaGithub size={30} color='black' className='icons'/></a>
+            <a href=""><FaFacebookF size={30} color='black'  className='icons'/> </a>
+            <a href=""><FaLinkedin size={30} color='black' className='icons'/></a>
 
         </div>
         <div className='profile-links'>
           <p>Aadarsha Bhattarai</p>
-            <a href=""><FaGithub size={30}  color='black' /></a>
-            <a href=""><FaFacebookF size={30} color='black'/> </a>
-            <a href=""><FaLinkedin size={30} color='black'/></a>
+          <div className='name-bottom-border'></div>
+            <a href=""><FaGithub size={30}  color='black' className='icons' /></a>
+            <a href=""><FaFacebookF size={30} color='black' className='icons'/> </a>
+            <a href=""><FaLinkedin size={30} color='black' className='icons'/></a>
 
         </div>
         <div className='profile-links'>
           <p>Rikesh shrestha</p>
-            <a href=""><FaGithub size={30} color='black'/></a>
-            <a href=""><FaFacebookF size={30} color='black'/> </a>
-            <a href=""><FaLinkedin size={30} color='black'/></a>
+          <div className='name-bottom-border'></div>
+            <a href=""><FaGithub size={30} color='black' className='icons'/></a>
+            <a href=""><FaFacebookF size={30} color='black' className='icons'/> </a>
+            <a href=""><FaLinkedin size={30} color='black' className='icons'/></a>
 
         </div>
         <div className='profile-links'>
           <p>Razz Tuladhar</p>
-            <a href=""><FaGithub size={30} color='black'/></a>
-            <a href=""><FaFacebookF size={30} color='black'/> </a>
-            <a href=""><FaLinkedin size={30} color='black'/></a>
+          <div className='name-bottom-border'></div>
+            <a href=""><FaGithub size={30} color='black' className='icons'/></a>
+            <a href=""><FaFacebookF size={30} color='black' className='icons'/> </a>
+            <a href=""><FaLinkedin size={30} color='black' className='icons'/></a>
 
         </div>
         </div>  

@@ -71,6 +71,10 @@
     background-color: #ccc;
     cursor: not-allowed;
   }
+  button:hover{
+    transition: 0.6s;
+    transform: scale(1.2);
+  }
     
 
 
@@ -126,7 +130,7 @@
   }
 
 .header-country-result{
-  color: #007bff;
+  color: #010810;
 }
 .dropdowns-container h2{
   color: darkslategray;

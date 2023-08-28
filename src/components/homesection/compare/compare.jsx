@@ -79,6 +79,7 @@ const Compare = () => {
 
   return (
     <div>
+    
       <div className="dropdowns-container">
         <h2>Select Options to Compare</h2>
         <div className="dropdown-wrapper">
@@ -112,7 +113,7 @@ const Compare = () => {
       </div>
       {!compareResult ? (
         <div>
-          <h1>Select countries to compare first</h1>
+          <h1>Select countries to compare Coutries E-governance</h1>
         </div>
       ) : (
         <div className="table__container">
